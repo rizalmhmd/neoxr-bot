@@ -17,9 +17,7 @@ exports.run = {
          }
 
          let results = search.all.slice(0, 15); // Batasi hasil maksimal 15
-         let txt = `乂  *YOUTUBE SEARCH*\n\n`;
-         txt += `Hasil pencarian untuk: *${text}*\n\n`;
-         txt += `Silakan pilih salah satu video dari hasil pencarian berikut:\n\n`;
+         let txt = `*Y O U T U B E - S E A R C H*\n\nResult From : ${text}\n\nSelect the list button below.`;
 
         
 
@@ -42,7 +40,7 @@ exports.run = {
 
          // Membuat tombol list untuk dikirim
          const buttonPayload = {
-            title: 'Pilih Jenis Konten',
+            title: 'Click Here ⎙',
             sections: listButtons
          };
 
